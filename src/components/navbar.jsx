@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar=()=>{
     return(
-        <nav className="navbar">
+        <nav className="navbar" id="header">
         <div style={{display:'flex',flexDirection:'row',alignItems:'center'}}>
       
         <div style={{margin:'0px 15px'}}>

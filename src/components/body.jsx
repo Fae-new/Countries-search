@@ -32,7 +32,7 @@ useEffect(()=>{
     isDataReady(true)
             }
             )
-               })
+               },[])
 
 
 
@@ -40,7 +40,8 @@ useEffect(()=>{
 const renderCountries=()=>{
 
 return(
-    countryData.filter(country=>country.region.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()))
+<div className="countryRenderdiv">
+   { countryData.filter(country=>country.region.toLocaleLowerCase().includes(filterValue.toLocaleLowerCase()))
     .filter(country=>country.name.toLowerCase().includes(searchValue.toLocaleLowerCase()))
     .map((country,index)=>{
         return(
@@ -54,7 +55,8 @@ return(
                 </div>
              
         )
-    })
+    })}
+    </div>
 )
 
 }
@@ -68,6 +70,7 @@ filterValue={filterValue}
     onChangeRegion={onChangeRegion}
     onChangeSearch={onChangeSearch}
 />
+
 {dataReady?renderCountries():<h2> Countries Loading ...</h2>}
 </div>
 )
