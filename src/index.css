@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #e5fbfd;
 }
+*{box-sizing: border-box;}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -48,18 +49,16 @@ code {
 
 }
 
-.body {
-  width: 100%;
-  margin-top: 40px;
-}
+
 
 .Searchbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  width: 80%;
-  margin-left: 10%;
+margin-bottom: 40px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 40px;
 }
 
 .Searchbar>input {
@@ -67,11 +66,11 @@ code {
   height: 40px;
   border: none;
   box-shadow: 0px 4px 2px -2px #d3d3d3;
-  width: 40%;
+  width: 45%;
 }
 
 .Searchbar>select {
-  width: 40%;
+  width: 45%;
   outline: none;
   height: 40px;
 }
@@ -81,27 +80,24 @@ code {
  margin-left: 50%;
 }
 
-option {
-  margin-left: 20px;
-}
+
 
 .countryCard {
-  width: 280px;
-
+  width: 26%;
   background-color: white;
-  padding-bottom: 20px;
   float: left;
-  margin: 40px 40px;
+
+  margin: 20px 2%;
 
 }
 
 .countryCard>img {
-  width: 100%;
+  width:100%;
   height: 200px;
 }
 .countryRenderdiv{
-width: 90%;
-margin-left: auto;
+width: fit-content;
+margin-left: 11%;
   
 }
 
@@ -114,8 +110,8 @@ margin-left: auto;
 }
 
 .footer-link{
-width: 20%;
-margin-left: 40%;
+width: 24%;
+margin-left: 39%;
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -128,35 +124,57 @@ margin-left: 40%;
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1000px) {
+  .countryCard {
+    width: 40%;
 
- .Searchbar{display: block;}
- .Searchbar>input{
-margin-bottom: 50px;
-  width: 100%;
+  
+  }
+  .countryRenderdiv{
+    width: fit-content;
+    margin-left: 10%;
+      
+    }
+
+  @media screen and (max-width:600px) {
+    .countryCard {
+      width: 80%;
+ margin-left: 5%;
+
+    }
+
+    .Searchbar {
+      display: flex;
+      flex-direction: column;
+
+    margin-bottom: 40px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 40px;
+    }
+
+    .Searchbar>input {
+      outline: none;
+      height: 40px;
+      border: none;
+      box-shadow: 0px 4px 2px -2px #d3d3d3;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    
+    .Searchbar>select {
+      width: 100%;
+      outline: none;
+      height: 40px;
+    }
+    .filtertext{margin-top:-20px;
+      line-height:2px;
+      position: absolute;
+     margin-left: 2%;
+     margin-top: 75px;
+    }
 
 
- }
- .Searchbar>select{
-   width: 100%;
-
- }
- .filtertext{
-
-margin-left: 0%;
- }
- .navbar h2{
-   font-size: 20px;
- }
- .countryCard {
-width: 80%;
-margin-left: 5%;
-text-align: center;
-
-}
-.footer-link{
-  width: 20%;
-  margin-left: 36%;
   }
   
 }
