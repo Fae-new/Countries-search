@@ -1,13 +1,14 @@
 import React from "react";
 
-
 const Searchbar=({onChangeRegion,onChangeSearch,searchValue,filterValue})=>{
 return(
   <div>
  
 <div className="Searchbar">
 
-<input type='text' placeholder="Search for a country" value={searchValue}onChange={onChangeSearch}/>
+
+<input type='text' placeholder="Search for a country..." value={searchValue}onChange={onChangeSearch} /> 
+
 <h4 className="filtertext">Filter by region</h4>
 <select id="Region" name="Region" onChange={onChangeRegion} value={filterValue}>
   <option value={null} defaultValue></option>

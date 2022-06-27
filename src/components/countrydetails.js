@@ -22,18 +22,23 @@ isReady(true)})
 
     return(
 <div>
-<Link to='/'>Home</Link>
+<Link to='/'><h3  style={{marginLeft:'85%'}}>Home</h3></Link>
 {Ready&&
 <div className="detailsCard">
-<img src={countrydetails[0].flag} style={{width:'45%',marginLeft:'2.5%',height:'400px'}} alt='flag'/>
+<img src={countrydetails[0].flag}  alt='flag'/>
 <div>
-    <h1> {countryName}</h1>
-<div> 
+    <h1  style={{marginLeft:'40px'}}> {countryName}</h1>
+<div className="infoDiv"> 
+
+<div>
 <p><strong>Native Name: </strong> {countrydetails[0].nativeName}</p>
 <p><strong>Population: </strong> {countrydetails[0].population.toLocaleString()}</p>
 <p><strong>Region: </strong> {countrydetails[0].region}</p>
 <p><strong>Sub Region: </strong> {countrydetails[0].subregion}</p>
 <p><strong>Capital: </strong> {countrydetails[0].capital}</p>
+</div>
+
+<div>
 <p><strong>Top Level Domain: </strong> {countrydetails[0].topLevelDomain[0]}</p>
 <p><strong>Calling Code: </strong> {countrydetails[0].callingCodes}</p>
 <p><strong>Currencies: </strong> {countrydetails[0].currencies[0].name}</p>
@@ -43,6 +48,7 @@ isReady(true)})
      }else{
          return(`${language.name}, `)}
  })}</p>
+ </div>
 
 </div>
 

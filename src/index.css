@@ -96,7 +96,7 @@ margin-bottom: 40px;
   height: 200px;
 }
 .countryRenderdiv{
-width: fit-content;
+width: 89%;
 margin-left: 11%;
   
 }
@@ -122,7 +122,40 @@ margin-left: 39%;
   border-top-left-radius: 5px;
 
 }
+.detail-link{
+text-align: center;
+font-size: 16px;
+}
 
+.detail-link a{
+
+  color: #050401;
+}
+.detailsCard{
+  display: flex;
+  flex-direction: row;
+
+padding-bottom: 100px;
+  
+}
+
+.infoDiv{
+  display: flex;
+
+}
+.infoDiv div{
+  
+  margin-left: 60px;
+}
+
+.infoDiv p{
+  font-size: 19px;
+}
+.detailsCard img{
+  width:40%;
+  margin-left:2.5%;
+
+}
 
 @media screen and (max-width:1000px) {
   .countryCard {
@@ -135,8 +168,30 @@ margin-left: 39%;
     margin-left: 10%;
       
     }
+    .detailsCard{
+      display: block;
+
+    }
+    .detailsCard img{
+      width:70%;
+      margin-left: 15%;
+      height: 320px;
+
+     
+    }
+    .infoDiv{
+      display: block;
+ 
+    
+    }
 
   @media screen and (max-width:600px) {
+    .detailsCard img{
+      width:90%;
+      margin-left: 5%;
+height: 250px;
+     
+    }
     .countryCard {
       width: 80%;
  margin-left: 5%;

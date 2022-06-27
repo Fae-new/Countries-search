@@ -17,7 +17,7 @@ return(
     <p><strong>Region:</strong> { country.region}</p>
     <p><strong>Capital:</strong> {country.capital}</p>
 
-    <Link to={`/countries/${country.name}`}>details</Link>
+    <h5 className='detail-link'> <Link to={`/countries/${country.name}`}>View More Details</Link></h5>
         </div>
      
 )
