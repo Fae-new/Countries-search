@@ -42,6 +42,7 @@ filterValue={filterValue}
 />
 
 {dataReady?<RenderCountries countryData={countryData} filterValue={filterValue} newPage={countryInfo} searchValue={searchValue}/>:<div><h2>Countries Loading ...</h2></div>}
+
 </div>
 )
 }

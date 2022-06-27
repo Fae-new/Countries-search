@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e5fbfd;
+  background-color: #f4fcfd;
 }
 *{box-sizing: border-box;}
 
@@ -51,6 +51,7 @@ code {
 
 .body{
   margin-bottom: 50px;
+  width: 100%;
 }
 
 .Searchbar {
@@ -67,7 +68,7 @@ margin-bottom: 40px;
   outline: none;
   height: 40px;
   border: none;
-  box-shadow: 0px 4px 2px -2px #d3d3d3;
+  box-shadow: -2px 2px 3px 0px #bdbaba;
   width: 45%;
 }
 
@@ -75,6 +76,8 @@ margin-bottom: 40px;
   width: 45%;
   outline: none;
   height: 40px;
+  border: none;
+  box-shadow: -2px 2px 3px 0px #bdbaba;
 }
 .filtertext{margin-top:-20px;
   line-height:2px;
@@ -85,25 +88,31 @@ margin-bottom: 40px;
 
 
 .countryCard {
-  width: 26%;
+
   background-color: white;
-  float: left;
+padding-bottom: 15px;
+  box-shadow: 6px 6px 5px -2px #d3d3d3;
 
-  margin: 10px  2%;
-
-}
-
-.countryCard>img {
-  width:100%;
-  height: 200px;
+  border-radius: 20px;
+ 
 }
 .countryRenderdiv{
-width: 89%;
-margin-left: 11%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 26% 26% 26%;
+  column-gap: 35px;
+  place-content: center;  
+  row-gap: 30px;
+  }
 
 
-  
+.flagImg{
+width: 100%;
+object-fit: fill;
+height: 200px;
 }
+
+
 
 .countryCard>h3 {
   margin-left: 20px;
@@ -160,16 +169,10 @@ padding-bottom: 100px;
 
 }
 
-@media screen and (max-width:1000px) {
-  .countryCard {
-    width: 45%;
-
+@media screen and (max-width:800px) {
   
-  }
   .countryRenderdiv{
-    width: 100%;
-margin-left: 0px;
-      
+    grid-template-columns: 40% 40%;
     }
     .detailsCard{
       display: block;
@@ -195,11 +198,9 @@ margin-left: 0px;
 height: 250px;
      
     }
-    .countryCard {
-      width: 80%;
- margin-left: 10%;
-
-    }
+.countryRenderdiv{
+  grid-template-columns: 80%;
+}
 
     .Searchbar {
       display: flex;

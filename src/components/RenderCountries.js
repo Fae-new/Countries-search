@@ -11,7 +11,7 @@ return(
 return(
 
     <div className="countryCard" key={index} id={index} onClick={newPage}>
-    <img src={country.flag} alt='Country flag'/>
+    <img src={country.flag} alt='Country flag' className="flagImg"/>
     <h3>{country.name}</h3>
     <p><strong>Population: </strong>{country.population.toLocaleString()}</p>
     <p><strong>Region:</strong> { country.region}</p>
