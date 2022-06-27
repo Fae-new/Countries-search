@@ -49,7 +49,9 @@ code {
 
 }
 
-
+.body{
+  margin-bottom: 50px;
+}
 
 .Searchbar {
   display: flex;
@@ -87,7 +89,7 @@ margin-bottom: 40px;
   background-color: white;
   float: left;
 
-  margin: 20px 2%;
+  margin: 10px  2%;
 
 }
 
@@ -98,6 +100,8 @@ margin-bottom: 40px;
 .countryRenderdiv{
 width: 89%;
 margin-left: 11%;
+
+
   
 }
 
@@ -113,14 +117,13 @@ margin-left: 11%;
 width: 24%;
 margin-left: 39%;
   position: fixed;
-  bottom: 0;
+bottom: 0;
   text-align: center;
   cursor: pointer;
   background-color: #f1d302;
   padding: 5px 20px;
   border-top-right-radius:5px ;
   border-top-left-radius: 5px;
-
 }
 .detail-link{
 text-align: center;
@@ -159,13 +162,13 @@ padding-bottom: 100px;
 
 @media screen and (max-width:1000px) {
   .countryCard {
-    width: 40%;
+    width: 45%;
 
   
   }
   .countryRenderdiv{
-    width: fit-content;
-    margin-left: 10%;
+    width: 100%;
+margin-left: 0px;
       
     }
     .detailsCard{
@@ -194,7 +197,7 @@ height: 250px;
     }
     .countryCard {
       width: 80%;
- margin-left: 5%;
+ margin-left: 10%;
 
     }
 
