@@ -36,20 +36,20 @@ import InputAdornment from '@mui/material/InputAdornment';
      </div>
 
      <div className="filterdiv">
-     <FormControl fullWidth>
-  <InputLabel>Search by Region</InputLabel>
-  <Select
-size="small"
+  <FormControl fullWidth>
+   <InputLabel>Search by Region</InputLabel>
+    <Select
+    size="small"
     value={filterValue}
     label=" Search by Region"
     onChange={onChangeRegion}
   >
    <MenuItem value='All regions'>All regions </MenuItem>
-<MenuItem value="Africa">Africa</MenuItem>
-<MenuItem  value="America">America</MenuItem>
-<MenuItem value="Asia">Asia</MenuItem>
-<MenuItem  value="Europe">Europe</MenuItem>
-<MenuItem value="Oceania">Oceania</MenuItem>
+   <MenuItem value="Africa">Africa</MenuItem>
+   <MenuItem  value="America">America</MenuItem>
+   <MenuItem value="Asia">Asia</MenuItem>
+   <MenuItem  value="Europe">Europe</MenuItem>
+   <MenuItem value="Oceania">Oceania</MenuItem>
   </Select>
 </FormControl>
   </div>

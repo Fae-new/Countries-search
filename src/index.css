@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:white;
+  background-color:rgb(245, 244, 244);
 }
 *{box-sizing: border-box;}
 
@@ -39,14 +39,16 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-margin-bottom: 40px;
+margin-bottom: 70px;
   width: 90%;
 margin-left: 5%;
   margin-top: 40px;
 }
 .searchdiv{width: 40%;
 
+
 }
+
 
 .filterdiv{width: 40%;
 
@@ -75,8 +77,9 @@ padding-bottom: 15px;
 
 .flagImg{
 width: 100%;
-object-fit: fill;
-height: 200px;
+object-fit: cover;
+aspect-ratio: 3.3/2;
+
 }
 
 

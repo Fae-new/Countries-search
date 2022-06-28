@@ -1,16 +1,20 @@
-
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Body from './components/body';
-// import Footer from './components/footer';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 import CountryDetails from './components/countrydetails';
 
+
 function App() {
+  const[Theme,changeTheme]=React.useState(true)
+
+  const handleClick=()=>changeTheme(!Theme)
+
   return (
     <Router>
-    <div>
-<Navbar/>
+    <div  >
+<Navbar changeTheme={handleClick}/>
 <Switch>
 
 <Route exact path='/'>
@@ -23,7 +27,7 @@ function App() {
   
 </Switch>
 
-{/* <Footer/> */}
+
     </div>
     </Router>
   );
