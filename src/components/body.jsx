@@ -21,7 +21,7 @@ isDataReady(true)
        },[])
 
 const onChangeRegion=(e)=>{
-setFilterValue(e.target.value)
+setFilterValue(e.target.value==='All regions'?'':e.target.value)
 }
 const onChangeSearch=(e)=>{
     setSearchValue(e.target.value)
@@ -35,13 +35,13 @@ console.log(e.target);
 return(
     <div className="body">
 <Searchbar
-searchValue={searchValue}
-filterValue={filterValue}
-    onChangeRegion={onChangeRegion}
-    onChangeSearch={onChangeSearch}
+ searchValue={searchValue}
+ filterValue={filterValue}
+ onChangeRegion={onChangeRegion}
+ onChangeSearch={onChangeSearch}
 />
-
-{dataReady?<RenderCountries countryData={countryData} filterValue={filterValue} newPage={countryInfo} searchValue={searchValue}/>:<div><h2>Countries Loading ...</h2></div>}
+{dataReady?
+<RenderCountries countryData={countryData} filterValue={filterValue} newPage={countryInfo} searchValue={searchValue}/>:<div><h2>Countries Loading ...</h2></div>}
 
 </div>
 )
